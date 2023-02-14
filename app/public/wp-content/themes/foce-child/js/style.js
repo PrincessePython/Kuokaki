@@ -1,0 +1,1 @@
+// alert ("It works, the JS file is integrated !");

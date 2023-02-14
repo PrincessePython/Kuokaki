@@ -1,0 +1,25 @@
+/*
+ Theme Name:  Fleurs d'orangers et chats errants - Oscars Short
+ Theme URI: https://www.koukaki.local
+ Author: Studio Koukaki
+ Author URI: https://www.koukaki.local
+ Template: foce
+ Description: Thème enfant à l'ocasion de la nomination aux Oscars Shorts
+ Version: 0.1
+ */
+
+
+ /* importation de animation.css */
+ @import url("css/animations.css");
+
+section.banner img{
+    animation-name: fadeInSlidetoTop;
+    animation-duration: 2700ms;
+    animation-timing-function: ease;
+}
+
+.banner{
+    animation-name: fadeInSlidetoBotom;
+    animation-duration: 2600ms;
+    animation-timing-function: ease;
+}

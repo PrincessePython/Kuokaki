@@ -1,0 +1,28 @@
+/* 
+Les animations d'apparission en fade-in et le mouvement en 2D (vertical) 
+des deex élémnts présets dans le banner de l'affichage géneral 
+*/
+
+/* logo img */
+@keyframes fadeInSlidetoTop {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+}
+
+/* background image */
+@keyframes fadeInSlidetoBotom {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/* ********* Fin animations banner ********************* */
