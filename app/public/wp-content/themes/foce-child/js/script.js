@@ -16,3 +16,10 @@
 //   // Tell the observer which elements to track
 //   observer.observe(document.querySelector('h2'));
 //   observer.observe(document.querySelector('h3'));
+
+let fadeInOnScroll = document.querySelectorAll("h2, h3") ;
+// console.log(fadeInOnScroll);
+
+window.addEventListener('scroll', () =>{
+    // declancher l'animation ici
+})

@@ -63,12 +63,12 @@ des deex élémnts présets dans le banner de l'affichage géneral
 /* **************** Fin Animation des fleurs ********************* */
 
 
-/* ****************** Animation: apprarition des titres **************** */
-/* @keyframes fade-in-scroll {
+/* ****************** Animation: apprarition des titres on scroll **************** */
+@keyframes fade-in-scroll {
     0%{
         opacity: 0;
     }
     100%{
         opacity: 1;
     }
-} */
+}
