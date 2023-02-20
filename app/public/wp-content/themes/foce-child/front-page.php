@@ -5,7 +5,7 @@ get_header();
 
     <main id="primary" class="site-main">
         <section class="banner">
-            <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
+            <img id="banner-logo" src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
         </section>
         <section id="#story" class="story">
             <h2>L'histoire</h2>
@@ -66,16 +66,9 @@ get_header();
             </div>
         </section>
 
-        <section id="nomination">
-            <div>
-               <p>Fleurs d’oranger & chats errants est nominé aux Oscars Short Film Animated de 2022 !</p>
-            </div>
+        <?php get_template_part('nomination-section'); ?>
 
-            <div>
-                <img src="" alt="">
-            </div>
-        </section>
-    </main><!-- #main -->
+</main><!-- #main -->
 
 <?php
 get_footer();

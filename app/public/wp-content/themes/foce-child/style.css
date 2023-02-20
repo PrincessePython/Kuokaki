@@ -23,3 +23,94 @@ section.banner img{
     animation-duration: 2600ms;
     animation-timing-function: ease;
 }
+
+/* animation section "histoire" */
+
+
+h2::before,h2::after,.story__article{
+    animation-name: SlidetoTop;
+    animation-duration: 2700ms;
+    animation-timing-function: linear;
+
+}
+
+/* .story h2::after{
+    -webkit-animation: rotate 1.4s linear infinite;
+    -moz-animation: rotate 1.4s linear infinite;
+    animation: rotate 1.4s linear infinite;
+    
+} */
+
+.story h2::after{
+    animation-name: flowerSpin;
+    animation-duration: 24s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: 77px 77px;
+    
+}
+
+
+.story__article::after,
+#studio h2::before,
+.site-footer::before,
+.site-footer::after,
+.site-footer ul::after{ 
+    /* animation: flowerSpin 2s liner infinite; */
+    animation-name: flowerSpin;
+    animation-duration: 24s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+/* ********** animation des stitres */
+/* h2, h3{
+    animation-name: fade-in-scroll;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+} */
+
+/* ******************************************** CSS Global **************************************** */
+/* video on the background */
+
+/* #banner-logo{
+    position: absolute;
+    z-index: 1;
+}
+video{
+    z-index: -1;
+} */
+
+/* nomination */
+.nomination-section{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    position:absolute;
+    margin-left: 230px;
+}
+.text-container{
+    width: 674px;
+    height: 196px;
+    background-image: url('http://koukaki.local/wp-content/uploads/2023/02/nuage-orange-texte.png');
+    background-size: contain;
+    background-size: 674px 196px;
+
+}
+.text-container p{
+    font-family: Quicksand;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 52px;
+    color: #FFF5E9;
+}
+.oscars-logo{
+    width: 278px;
+    height: 129px;
+}
+
+.site-footer{
+    margin-top: 250px;
+}
+

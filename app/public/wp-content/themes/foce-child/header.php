@@ -19,7 +19,12 @@
 
     
     <!-- ajoute des fichiers CSS -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="wp-content/themes/foce-child/style.css">
+
+    <!-- Ajout de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
 
 
     <!-- CDN de Swiper -->

@@ -17,11 +17,9 @@ if ( get_stylesheet() !== get_template() ) {
 
 // Ajoute le JS sur toutes les pages
 function my_scripts() {
-    wp_enqueue_script( 'style.js', get_stylesheet_directory_uri() . '/js/style.js', array(),  true );
-    wp_enqueue_script( 'style.js', get_stylesheet_directory_uri() . '/js/dom.js', array(),  true );
+    wp_enqueue_script( 'script.js', get_stylesheet_directory_uri() . '/js/script.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'dom.js', get_stylesheet_directory_uri() . '/js/dom.js', array(), _S_VERSION, true );
   }
   add_action( 'wp_enqueue_scripts', 'my_scripts' );
-
-// Ajoute du CSS
 
   
