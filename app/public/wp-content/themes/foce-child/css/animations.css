@@ -26,7 +26,15 @@ des deex élémnts présets dans le banner de l'affichage géneral
     }
 }
 
-/* ********* Fin animations banner ********************* */
+/* logo floating animation */
+@keyframes floater {
+    0%{transform: translateY(-10px);transition: ease 0.5s;}
+    50%{transform: translateY(10px);transition: ease 0.5s;}
+    100%{transform: translateY(-10px);transition: ease 0.5s;}
+  } 
+
+
+/* ============ Fin animations banner ====================== */
 
 /* *************** Debut animation section "histoire"  ************** */
 

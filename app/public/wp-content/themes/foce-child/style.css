@@ -16,6 +16,7 @@ section.banner img{
     animation-name: fadeInSlidetoTop;
     animation-duration: 2700ms;
     animation-timing-function: ease;
+
 }
 
 .banner{
@@ -24,8 +25,17 @@ section.banner img{
     animation-timing-function: ease;
 }
 
-/* animation section "histoire" */
+/* #banner-logo{
+    animation-name: floater;
+    animation-timing-function: ease-in-out;
+} */
+#banner-logo{
+    animation: floater 5s cubic-bezier(0.43, 0.08, 0.61, 0.99) infinite;
+}
 
+
+
+/* animation section "histoire" */
 
 h2::before,h2::after,.story__article{
     animation-name: SlidetoTop;
@@ -42,10 +52,7 @@ h2::before,h2::after,.story__article{
 } */
 
 .story h2::after{
-    animation-name: flowerSpin;
-    animation-duration: 24s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation: flowerSpin 24s linear infinite;
     transform-origin: 77px 77px;
     
 }
@@ -55,16 +62,12 @@ h2::before,h2::after,.story__article{
 #studio h2::before,
 .site-footer::before,
 .site-footer::after,
-.site-footer ul::after{ 
-    /* animation: flowerSpin 2s liner infinite; */
-    animation-name: flowerSpin;
-    animation-duration: 24s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    
+.site-footer ul::after,
+#studio h2::after{ 
+    animation: flowerSpin 24s linear infinite;    
 }
 
-/* ********** animation des stitres */
+/* ********** animation des titres */
 h2, h3{
     animation-name: fade-in-scroll;
     animation-duration: 2s;
@@ -77,13 +80,33 @@ h2, h3{
 #banner-logo{
     position: absolute;
     z-index: 1;
-    width: 30%;
-    margin-top: -100px; 
+    margin-bottom: 150px;
 }
 video{
     z-index: 0;
-    max-width: 100%;
+
 }
+.banner{
+    position: relative;
+}
+
+/* css classique */
+/* .banner{
+    background-image: none;
+}  */
+
+/* .banner{
+    width: 100%;
+    height: 806px;
+}
+#banner-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* margin-top: -8%; */
+    /* transform: translate(-50%, -50%);
+} */
+
 
 
 /* nomination */

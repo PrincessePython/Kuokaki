@@ -7,6 +7,14 @@ get_header();
         <section class="banner">
             <img id="banner-logo" src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
         </section>
+        <!-- <section class="banner">
+            <img id="banner-logo" src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
+            <video class="video" autoplay muted loop
+                poster="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
+                <source src="https://course.oc-static.com/projects/D%C3%A9veloppeur+Web/DWP+IW_P9+Studio+d%27animation/Studio+Koukaki-vide%CC%81o+header+sans+son+(1).mp4"> 
+            </video>
+        </section> -->
+
         <section id="#story" class="story">
             <h2>L'histoire</h2>
             <article id="" class="story__article">
