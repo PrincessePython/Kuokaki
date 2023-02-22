@@ -4,6 +4,17 @@ function theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 }
 
+// // // // // // // // // // // // // /Ajoute le jQuery  // // // // /// /// // // // // // // // // // // // /
+
+// function theme_scripts() {
+//     wp_enqueue_script('script', get_stylesheet_directory_uri() . '/script.js', array(), _S_VERSION, true); 
+// }
+// add_action('wp_enqueue_scripts', 'theme_scripts');
+
+// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
+
+
+
 // Get customizer options form parent theme
 if ( get_stylesheet() !== get_template() ) {
     add_filter( 'pre_update_option_theme_mods_' . get_stylesheet(), function ( $value, $old_value ) {
@@ -21,5 +32,3 @@ function my_scripts() {
     wp_enqueue_script( 'dom.js', get_stylesheet_directory_uri() . '/js/dom.js', array(), _S_VERSION, true );
   }
   add_action( 'wp_enqueue_scripts', 'my_scripts' );
-
-  

@@ -1,0 +1,75 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: February 22, 2023 1:34 pm
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.5.2.1
+WORDPRESS:	6.1.1
+PHP INFO:	8.1.9 | SAPI: cgi-fcgi
+SERVER:		nginx/1.16.0 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 4294967296 (256M default) 
+MEMORY STACK: 12MB
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Not Supported
+TABLES: total:13 | filtered:0 | create:13
+FILTERED: []
+SQL CREATED: 20230222_fleursdorangerchatserrants_4689a46af3edb33b2999_20230222133445_database.sql
+SQL FILE SIZE: 634.35KB (649579)
+SQL FILE TIME: 2023-02-22 13:34:55
+SQL RUNTIME: 0.62 sec.
+
+********************************************************************************
+ARCHIVE (ZIP):
+********************************************************************************
+ARCHIVE DIR:  C:/Users/sumop/Local Sites/koukaki/app/public
+ARCHIVE FILE: 20230222_fleursdorangerchatserrants_4689a46af3edb33b2999_20230222133445_archive.zip
+FILTERS: *OFF*
+DIRS:
+	not set
+FILES:
+	not set
+EXTS:  not set
+----------------------------------------
+COMPRESSING
+SIZE:	98.55MB
+STATS:	Dirs 514 | Files 3,765
+SQL ADDED: 20230222_fleursdorangerchatserrants_4689a46af3edb33b2999_20230222133445_database.sql
+ZipArchive Object
+(
+    [lastId] => 4278
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 4279
+    [filename] => C:\Users\sumop\Local Sites\koukaki\app\public\wp-content\backups-dup-lite\tmp\20230222_fleursdorangerchatserrants_4689a46af3edb33b2999_20230222133445_archive.zip
+    [comment] => 
+)
+
+FILE ADDED TO ZIP: 4278
+COMPRESSION RESULT: '1'
+COMPRESSED SIZE: 52.96MB
+ARCHIVE RUNTIME: 31.25 sec.
+MEMORY STACK: 14MB
+building installer
+ARCHIVE CONSISTENCY TEST: PASS
+
+********************************************************************************
+INTEGRITY CHECKS:
+********************************************************************************
+SQL FILE: 634.35KB
+INSTALLER FILE: 73.37KB
+ARCHIVE FILE: 54.77MB 
+EXPECTED FILE/DIRECTORY COUNT: 4,279
+ACTUAL FILE/DIRECTORY COUNT: 4,278
+ARCHIVE CONSISTENCY TEST: Pass
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 33.44 sec.
+PEAK PHP MEMORY USED: 14MB
+DONE PROCESSING => 20230222_fleursdorangerchatserrants February 22, 2023 1:35 pm
+

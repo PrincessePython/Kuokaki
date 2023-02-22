@@ -62,7 +62,6 @@ des deex élémnts présets dans le banner de l'affichage géneral
 } */
 
 
-
 @keyframes flowerSpin {
     100%{
         transform: rotate(360deg);
@@ -71,12 +70,12 @@ des deex élémnts présets dans le banner de l'affichage géneral
 /* **************** Fin Animation des fleurs ********************* */
 
 
-/* ****************** Animation: apprarition des titres on scroll **************** */
-@keyframes fade-in-scroll {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+/* ================ Animations titles ================ */
+@keyframes fadeInOnScroll {
+    0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
 }

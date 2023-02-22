@@ -23,5 +23,3 @@ video.appendChild(source);
 
 // attacher vidéo à l'implacement dans la section
 container.appendChild(video);
-
-

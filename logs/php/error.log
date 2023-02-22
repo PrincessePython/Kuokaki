@@ -1,0 +1,1 @@
+[22-Feb-2023 11:27:35 UTC] Cron reschedule event error for hook: wp_update_plugins, Error code: could_not_set, Error message: La liste des évènements planifiés n’a pas pu être sauvegardée., Data: {"schedule":"twicedaily","args":[],"interval":43200}

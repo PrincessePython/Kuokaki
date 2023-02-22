@@ -1,25 +1,36 @@
-// alert ("It works, the JS file is integrated !");
+// ==================================== version jQuery =================================
+// $(function() {
+// // alert ("It works, the JS file is integrated !");
 
-// // Observer API
-// // Create the observer
-// const observer = new IntersectionObserver(entries => {
-//   // Loop over the entries
-//      entries.forEach(entry => {
-//     // If the element is visible
-//     if (entry.isIntersecting) {
-//       // Add the animation class
-//       entry.target.classList.add('MA CLASSE ici');
-//     }
-//   });
-//   });
-  
-//   // Tell the observer which elements to track
-//   observer.observe(document.querySelector('h2'));
-//   observer.observe(document.querySelector('h3'));
+// var transitionTime = 1500;
+// // Fade in des sections au scroll
+// $(window).scroll(function() {
+//     var scrolledFromTop = $(window).scrollTop() + $(window).height();
+//     $("section, footer").each(function() {
+//         var distanceFromTop = $(this).offset().top;
+//         if (scrolledFromTop >= distanceFromTop) {
+//             $(this).animate({
+//                'top': '0',
+//                'opacity':'1'
+//             }, transitionTime);
+//         }
+//     });
+// });
 
-let fadeInOnScroll = document.querySelectorAll("h2, h3") ;
-// console.log(fadeInOnScroll);
+// });
 
-window.addEventListener('scroll', () =>{
-    // declancher l'animation ici
-})
+// ==================================== version JS =================================
+
+const titles = document.querySelectorAll('.fade-in-scroll');
+
+function fadeInTitles() {
+  titles.forEach((title) => {
+    const rect = title.getBoundingClientRect();
+    const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+    if (rect.top <= viewHeight * 0.8) {
+      title.classList.add('fade-in');
+    }
+  });
+}
+
+window.addEventListener('scroll', fadeInTitles);
