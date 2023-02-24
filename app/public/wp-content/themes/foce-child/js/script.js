@@ -1,9 +1,9 @@
 // ==================================== version jQuery =================================
 // $(function() {
-// // alert ("It works, the JS file is integrated !");
+// alert ("It works, the JS file is integrated !");
 
 // var transitionTime = 1500;
-// // Fade in des sections au scroll
+// Fade in des sections au scroll
 // $(window).scroll(function() {
 //     var scrolledFromTop = $(window).scrollTop() + $(window).height();
 //     $("section, footer").each(function() {
@@ -19,7 +19,7 @@
 
 // });
 
-// ==================================== version JS =================================
+// ==================================== titles version JS =================================
 
 const titles = document.querySelectorAll('.fade-in-scroll');
 
@@ -32,5 +32,21 @@ function fadeInTitles() {
     }
   });
 }
-
 window.addEventListener('scroll', fadeInTitles);
+
+
+// ==================================== carousel Swiper =================================
+var swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  initialSlide: 1,
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: false,
+  },
+});

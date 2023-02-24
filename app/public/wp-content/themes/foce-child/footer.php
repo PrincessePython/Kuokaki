@@ -22,12 +22,5 @@
 
 <?php wp_footer(); ?>
 
-<!-- CDN  Swiper-->
-<!-- <script type="module">
-  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
-
-  const swiper = new Swiper(...) // class css des mes élements ! 
-</script> -->
-
 </body>
 </html>

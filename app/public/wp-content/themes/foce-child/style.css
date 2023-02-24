@@ -34,7 +34,6 @@ section.banner img{
 }
 
 
-
 /* animation section "histoire" */
 
 h2::before,h2::after,.story__article{
@@ -66,7 +65,7 @@ h2::before,h2::after,.story__article{
     animation: flowerSpin 24s linear infinite;    
 }
 
-/* ********** animation des titres */
+/* ********** animation des titres *******************/
 .fade-in-scroll{
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -85,6 +84,7 @@ h2::before,h2::after,.story__article{
 }
 video{
     z-index: 0;
+    width: 100%;  /* pour faire 100% sur chrome */
 }
 .banner{
     position: relative;
@@ -97,7 +97,7 @@ video{
     flex-direction: row;
     position:absolute;
     margin-left: 252px;
-    margin-top: 125px;
+    margin-top: 130px;
 }
 .text-container{
     width: 751px;
@@ -121,7 +121,7 @@ video{
 }
 
 .site-footer{
-    margin-top: 150px;
+    margin-top: 70px;
 }
 .site-footer ul{
     margin-top: 300px;
@@ -132,6 +132,36 @@ video{
 .site-footer::before{
     margin-top: -12px;
 }
+.site-footer ul::after{
+    /* content: ""; */
+    /* margin-top: 10px; */
+}
 
-/* ================= Fin section nomination ============================== */
+/**** Fin section nomination  ****/
+
+/* Carousel */
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+/* ================= Fin section carousel ============================== */
+
+
+
+
 
