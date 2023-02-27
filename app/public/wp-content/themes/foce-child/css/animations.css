@@ -79,3 +79,15 @@ des deex élémnts présets dans le banner de l'affichage géneral
 		transform: scale(1, .025);
 	}
 }
+
+/* ================ Animation des nuages =========================== */
+@keyframes slideToTheSide {
+    0%{
+        margin-right: 0;
+        width: 300px;
+    }
+    100%{
+        margin-left: 0;
+        width: 100%;
+    }
+}

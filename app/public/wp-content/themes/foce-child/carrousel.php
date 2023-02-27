@@ -33,7 +33,6 @@ $characters_query = new WP_Query($args);
             echo '</figure>';
         }
         ?>
-
     </div>
     <div class="swiper-pagination"></div>
 </div>

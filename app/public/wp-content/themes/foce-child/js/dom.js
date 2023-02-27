@@ -1,10 +1,11 @@
+/***********************  Video section ************************/
+
 // selection d'endroit ou la vidéo sera placée
 let container = document.querySelector('.banner');
 
-
 // création d'un élémnt vidéo
 let video = document.createElement('video');
-
+console.log(video);
 
 // attribute "poster"
 video.poster = 'wp-content/themes/foce-child/assets/images/banner.png';
@@ -17,9 +18,12 @@ source.setAttribute('type', 'video/mp4');
 
 video.autoplay = true;
 video.loop = true;
+video.muted = true;
 
 //  attacher élement 'source' à vidéo
 video.appendChild(source);
 
 // attacher vidéo à l'implacement dans la section
 container.appendChild(video);
+
+/***********************  Fin video section ***********************/

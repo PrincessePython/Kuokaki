@@ -35,13 +35,15 @@ function fadeInTitles() {
 window.addEventListener('scroll', fadeInTitles);
 
 
-// ==================================== carousel Swiper =================================
-var swiper = new Swiper(".mySwiper", {
+// ==================================== carrousel Swiper =================================
+let swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
   initialSlide: 1,
+  // loop: true,
+  // loopAdditionalSlides: 1,
   coverflowEffect: {
     rotate: 50,
     stretch: 0,
@@ -49,4 +51,22 @@ var swiper = new Swiper(".mySwiper", {
     modifier: 1,
     slideShadows: false,
   },
+
 });
+
+// ======================================== Burger Header ======================================
+
+// function toggleMenu(){
+//   const burgerMenu = document.querySelector(".burger-menu-opened");
+//   const burgerOverlay = document.querySelector(".burger-overlay");
+  
+//   if (burgerMenu.classList.contains("active")) {
+//     burgerMenu.classList.remove(".active");
+//     burgerOverlay.classList.remove(".active");
+//   }else{
+//     burgerMenu.classList.add(".active"); 
+//     burgerOverlay.classList.add(".active"); 
+//   }
+
+// }
+// window.addEventListener('click', toggleMenu);

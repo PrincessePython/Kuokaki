@@ -72,9 +72,132 @@ h2::before,h2::after,.story__article{
 }
 .fade-in-scroll.fade-in {
     opacity: 1;
-  }
+}
 
 /* ******************************************** CSS Global **************************************** */
+/* header */
+.main-navigation{
+    padding: 30px;
+}
+
+.burger-menu-icon svg{
+    height: 30px;
+    width: 30px;
+}
+
+.burger-menu-icon{
+    cursor: pointer;
+}
+/* .burger-menu-icon:hover{
+    zoom: 2;
+} */
+
+/* .site-header{
+    z-index: 9999;
+} */
+
+/* designing the once opened window with an overlay  */
+.burger-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 245, 233, 1);
+    z-index: -1;
+    display: none;
+}
+.burger-overlay.active{
+    display: block;
+}
+
+.burger-menu-opened{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%; /*! modifier à 100%  aprés les testes*/
+    height: 100vh;
+    background-color: rgb(255, 245, 233, 1) ; /*! modifier à 1  aprés les testes*/
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* transform: translatex(100%);
+    transition: 0.4s linear; */
+}
+.burger-menu-opened.active{
+    transform: initial;
+}
+.logo-burger-opened{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.logo-burger-opened img{
+    width: 150px;
+    height: 95px;
+}
+
+.burger-menu-links{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.burger-menu-links a {
+    text-decoration: none;
+
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 84px;
+}
+.burger-menu-links a:hover{
+    color:black !important;
+    text-shadow: 1px 1px 8px rgba(255, 195, 157,0.5), 
+    0px 0px 6px rgba(255,195,157,0.5), 
+    0px 0px 6px rgba(255,195,157,0.5), 
+    0px 0px 6px rgba(255,195,157,0.5), 
+    0px 0px 6px rgba(255,195,157,0.5), 
+    0px 0px 6px rgba(255,195,157,0.5), 
+    0px 0px 6px rgba(255,195,157,0.5), 
+    0px 0px 6px rgba(255,195,157,0.5), 
+    0px 0px 6px rgba(255,195,157,0.5), 
+    0px 0px 6px rgba(255,195,157,0.5);
+}
+
+.burger-menu-links li{
+    margin-bottom: 50px;
+}
+
+/* ? last-of-type targets the last element and applying the desired style on it */
+.burger-menu-links li:last-of-type{
+    margin-bottom: initial; /* initial here equals to 0, to avoid unnecessery margin of 50px on the bottom*/
+}
+.footer-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.burger-menu-footer-link{
+    margin: 0;
+    padding: 0;
+    width: 160px;
+    height: 12px;
+    list-style: none;
+}
+.burger-menu-footer-link a{
+    text-decoration: none;
+}
+
+#site-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 /* video on the background */
 #banner-logo{
@@ -85,10 +208,35 @@ h2::before,h2::after,.story__article{
 video{
     z-index: 0;
     width: 100%;  /* pour faire 100% sur chrome */
+    /*! option for creating a parallax. video stays fixed on the background */
+    /* position: fixed;  */
 }
 .banner{
     position: relative;
 }
+/* *********** fin de header ************************ */
+
+/* ******************** Nuages ****************************** */
+.story #place{
+	background-image: url("http://koukaki.local/wp-content/uploads/2023/02/Studio_Koukaki-image_place.png");
+	margin-bottom: -1em;
+}
+
+.cloud-1{
+    position: absolute;
+    margin-top: -417px;
+    padding-left: 292px;
+}
+.cloud-2{
+    position: absolute;
+    padding-left: 40px;
+    margin-bottom: 160px;
+}
+.clouds{
+    animation: slideToTheSide 10s linear infinite;
+    filter: blur(12px);         
+}
+
 
 
 /* nomination */
@@ -160,6 +308,7 @@ video{
   }
 
 /* ================= Fin section carousel ============================== */
+
 
 
 

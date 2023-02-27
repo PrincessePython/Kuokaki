@@ -50,6 +50,51 @@
 
         <header id="masthead" class="site-header">
             <nav id="site-navigation" class="main-navigation">
+                <!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button> -->
+                <div class="site-name">
+                    <ul>
+                        <li class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></li>
+                    </ul>
+                </div>
+
+                <div class="burger-menu-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </div>
+            </nav>
+                <!-- <div class="burger-menu-opened">
+                    <div class="logo-burger-opened">
+                        <img src="../../uploads/2023/02/LOGO-150x97.png" alt="logo studio d'animation">
+                        <img src="../foce-child/assets/images/logo.png" alt="logo studio d'animation">
+    
+                    </div>
+                    <ul class="burger-menu-links">
+                        <li><a href="#story">Histoire</a></li>
+                        <li><a href="#characters">Personnages</a></li>
+                        <li><a href="#place">Lieu</a></li>
+                        <li><a href="#studio">Studio Koukaki</a></li>
+                    </ul>
+
+                    <div class="footer-link">
+                        <ul class="burger-menu-footer-link">
+                            <li><a href="#">STUDIO KOUKAKI</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+    
+                <div class="burger-overlay"></div> -->
+        </header>
+
+
+        <!----------------------------------- VO  -------------------------------------------------->
+        <!-- <header id="masthead" class="site-header">
+            <nav id="site-navigation" class="main-navigation">
                 <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
                     <span class="line"></span>
                     <span class="line"></span>
@@ -62,6 +107,5 @@
                     <li><a href="#place">Lieu</a></li>
                     <li><a href="#studio">Studio Koukaki</a></li>
                 </ul>
-
-            </nav><!-- #site-navigation -->
-        </header><!-- #masthead -->
+            </nav>
+        </header> -->
