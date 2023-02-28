@@ -75,6 +75,11 @@ h2::before,h2::after,.story__article{
 }
 
 /* ******************************************** CSS Global **************************************** */
+/* Video */
+/* .banner-video{
+
+} */
+
 /* header */
 .main-navigation{
     padding: 30px;
@@ -97,7 +102,7 @@ h2::before,h2::after,.story__article{
 } */
 
 /* designing the once opened window with an overlay  */
-.burger-overlay{
+/* .burger-overlay{
     position: fixed;
     top: 0;
     left: 0;
@@ -109,9 +114,10 @@ h2::before,h2::after,.story__article{
 }
 .burger-overlay.active{
     display: block;
-}
+} */
 
 .burger-menu-opened{
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
@@ -123,12 +129,9 @@ h2::before,h2::after,.story__article{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    /* transform: translatex(100%);
-    transition: 0.4s linear; */
 }
 .burger-menu-opened.active{
-    transform: initial;
+    display: visible;
 }
 .logo-burger-opened{
     text-align: center;
@@ -217,6 +220,7 @@ video{
 /* *********** fin de header ************************ */
 
 /* ******************** Nuages ****************************** */
+/* remplacement d'image en background */
 .story #place{
 	background-image: url("http://koukaki.local/wp-content/uploads/2023/02/Studio_Koukaki-image_place.png");
 	margin-bottom: -1em;
@@ -233,11 +237,10 @@ video{
     margin-bottom: 160px;
 }
 .clouds{
-    animation: slideToTheSide 10s linear infinite;
+    animation: slideToTheSide 10s linear infinite; /*! just for test, to remove @keyframes from animations once done */
     filter: blur(12px);         
+    width: 300px;
 }
-
-
 
 /* nomination */
 .nomination-section{
@@ -309,7 +312,21 @@ video{
 
 /* ================= Fin section carousel ============================== */
 
+/* sections */
 
+/* section{
+    animation: fadeIn  2s ease-in;
+} */
+
+.section{
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
+}
+.section.fade-in {
+    opacity: 1;
+}
+
+/* ================= Fin fade-in Sections ============================== */
 
 
 

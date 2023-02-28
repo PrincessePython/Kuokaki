@@ -91,3 +91,10 @@ des deex élémnts présets dans le banner de l'affichage géneral
         width: 100%;
     }
 }
+
+/* ===================== Animation des sections fade-in ================= */
+@keyframes fadeIn {
+    0%{
+        transform:scale(0, 0.25);
+    }
+}

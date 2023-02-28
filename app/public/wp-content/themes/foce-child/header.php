@@ -50,7 +50,7 @@
 
         <header id="masthead" class="site-header">
             <nav id="site-navigation" class="main-navigation">
-                <!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="true">
                     <span class="line"></span>
                     <span class="line"></span>
                     <span class="line"></span>
@@ -71,6 +71,7 @@
                     <div class="logo-burger-opened">
                         <img src="../../uploads/2023/02/LOGO-150x97.png" alt="logo studio d'animation">
                         <img src="../foce-child/assets/images/logo.png" alt="logo studio d'animation">
+                        <img src="http://koukaki.local/wp-content/uploads/2023/02/LOGO.png" alt="logo studio d'animation"> 
     
                     </div>
                     <ul class="burger-menu-links">

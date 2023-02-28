@@ -5,10 +5,11 @@ let container = document.querySelector('.banner');
 
 // création d'un élémnt vidéo
 let video = document.createElement('video');
-console.log(video);
+// console.log(video);
 
 // attribute "poster"
 video.poster = 'wp-content/themes/foce-child/assets/images/banner.png';
+video.className = "banner-video";
 
 // ajoute de source vidéo
 let source = document.createElement('source');
