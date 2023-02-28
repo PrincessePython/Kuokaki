@@ -28,14 +28,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
 
-    <!-- ajoute de jQuery -->
-    <!-- <script
-        src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-        crossorigin="anonymous">
-    </script> -->
-
-
     <!-- CDN de Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -50,11 +42,6 @@
 
         <header id="masthead" class="site-header">
             <nav id="site-navigation" class="main-navigation">
-                <!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="true">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </button> -->
                 <div class="site-name">
                     <ul>
                         <li class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></li>
@@ -62,34 +49,36 @@
                 </div>
 
                 <div class="burger-menu-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                    <svg class="toggleMenuIcon active" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
+                    <svg class="closeIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+
                 </div>
             </nav>
-                <!-- <div class="burger-menu-opened">
-                    <div class="logo-burger-opened">
-                        <img src="../../uploads/2023/02/LOGO-150x97.png" alt="logo studio d'animation">
-                        <img src="../foce-child/assets/images/logo.png" alt="logo studio d'animation">
-                        <img src="http://koukaki.local/wp-content/uploads/2023/02/LOGO.png" alt="logo studio d'animation"> 
-    
-                    </div>
-                    <ul class="burger-menu-links">
-                        <li><a href="#story">Histoire</a></li>
-                        <li><a href="#characters">Personnages</a></li>
-                        <li><a href="#place">Lieu</a></li>
-                        <li><a href="#studio">Studio Koukaki</a></li>
-                    </ul>
-
-                    <div class="footer-link">
-                        <ul class="burger-menu-footer-link">
-                            <li><a href="#">STUDIO KOUKAKI</a></li>
-                        </ul>
-                    </div>
-
+            <div class="burger-menu-opened">
+                <div class="logo-burger-opened">
+                    <img src="http://koukaki.local/wp-content/uploads/2023/02/LOGO.png" alt="logo studio d'animation">
                 </div>
-    
-                <div class="burger-overlay"></div> -->
+
+                <ul class="burger-menu-links">
+                    <li><a class="link active" href="#story">Histoire</a></li>
+                    <li><a class="link active" href="#characters">Personnages</a></li>
+                    <li><a class="link active" href="#place">Lieu</a></li>
+                    <li><a class="link active" href="#studio">Studio Koukaki</a></li>
+                </ul>
+
+                <div class="footer-link">
+                    <ul class="burger-menu-footer-link">
+                        <li><a href="#">STUDIO KOUKAKI</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- <div class="burger-overlay"></div> -->
         </header>
 
 

@@ -1,24 +1,3 @@
-// ==================================== version jQuery =================================
-// $(function() {
-// alert ("It works, the JS file is integrated !");
-
-// var transitionTime = 1500;
-// Fade in des sections au scroll
-// $(window).scroll(function() {
-//     var scrolledFromTop = $(window).scrollTop() + $(window).height();
-//     $("section, footer").each(function() {
-//         var distanceFromTop = $(this).offset().top;
-//         if (scrolledFromTop >= distanceFromTop) {
-//             $(this).animate({
-//                'top': '0',
-//                'opacity':'1'
-//             }, transitionTime);
-//         }
-//     });
-// });
-
-// });
-
 // ==================================== titles version JS =================================
 
 const titles = document.querySelectorAll('.fade-in-scroll');
@@ -54,56 +33,50 @@ let swiper = new Swiper(".mySwiper", {
 
 });
 
-// ======================================== Burger Header ======================================
+// ======================================== Burger Hero Header ======================================
 
-// function toggleMenu(){
-//   const burgerMenu = document.querySelector(".burger-menu-opened");
-//   const burgerOverlay = document.querySelector(".burger-overlay");
-
-//   if (burgerMenu.classList.contains("active")) {
-//     burgerMenu.classList.remove(".active");
-//     burgerOverlay.classList.remove(".active");
-//   }else{
-//     burgerMenu.classList.add(".active"); 
-//     burgerOverlay.classList.add(".active"); 
-//   }
-
-// }
-// window.addEventListener('click', toggleMenu);
-
-// ******? logique 2 **************
-/*
-1. je clique sur l'icon de burger menu  (.burger-menu-icon)
-  -> created in html in nav .main-navigation
-  -> add class active
-
-  1.1 function js 'click' that executes the following action :
-    ->function that toggles the display property once clicked
-    
-
-    1.1.1 New full screen window openes with menu 
-      -> create this 'page' in html
-      -> style it with css
-      -> animate with  @keyframes all the flowers and cats
-
-      function : 
-        1. give a name to the function
-        2. aim with query seceltor on the botton .burger-menu-icon
-          -> add on click event listenner
-          -> check if it's clicked : PROBLEME IS HERE
-          -> if this botton is clicked -> display the .burger-menu-opened.active
-          -> if not, keeps the inital site appereance
-        3. call the function
-        
-
-*/
 function openBurgerMenu() {
-  const menuButton = document.querySelector('burger-menu-icon');
+  const menuButton = document.querySelector('.burger-menu-icon');
   // check if it's clicked 
   menuButton.addEventListener('click', () => {
-    console.log('botton was clicked !');
+
+    const burgerMenuIcon = document.querySelector(".toggleMenuIcon");
+    const closeIcon = document.querySelector(".closeIcon");
+    const menu = document.querySelector('.burger-menu-opened');
+
+    if (burgerMenuIcon.classList.contains('active')) {
+      burgerMenuIcon.classList.remove("active");
+      closeIcon.classList.add("active");
+      //ouvrir le .burger menu
+      menu.classList.add('active');
+
+    } else {
+      burgerMenuIcon.classList.add("active");
+      closeIcon.classList.remove("active");
+      menu.classList.remove('active');
+    }
   })
 }
+openBurgerMenu();
+
+// function followLinksCloseMenu() {
+//   const links = document.querySelectorAll('a');
+//   links.addEventListener('click', () => {
+//     const burgerMenuIcon = document.querySelector(".toggleMenuIcon");
+//     const closeIcon = document.querySelector(".closeIcon");
+//     const menu = document.querySelector('.burger-menu-opened');
+
+//     if (links.classList.contains('active')) {
+//       burgerMenuIcon.classList.add("active");
+//       closeIcon.classList.remove("active");
+//       menu.classList.remove('active');
+//       links.classList.add('active');
+//     }
+
+//   })
+
+// }
+// followLinksCloseMenu();
 
 // ======================================= Clouds ======================================
 const clouds = document.querySelector('.clouds');
@@ -117,9 +90,12 @@ window.addEventListener('scroll', function () {
   // 699px height. Total size of move is 300px
   // transform translateX 300 px - > ? 
   const currentPosition = document.documentElement.scrollTop
+  const rect = MON - VAR.getBoundingClientRect();
   // console.log(currentPosition);
-  if (currentPosition >= 1300 && currentPosition <= 2400) {
+  if (currentPosition >= 1355 && currentPosition <= 2400) {
     console.log('CLOUDS MOVING !');
+    const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+
     // cloud1 transform translateX + considering the width of the container .clouds 
     // cloud2 transform translateX
   } else {

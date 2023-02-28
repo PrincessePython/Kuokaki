@@ -43,13 +43,6 @@ h2::before,h2::after,.story__article{
 
 }
 
-/* .story h2::after{
-    -webkit-animation: rotate 1.4s linear infinite;
-    -moz-animation: rotate 1.4s linear infinite;
-    animation: rotate 1.4s linear infinite;
-    
-} */
-
 .story h2::after{
     animation: flowerSpin 24s linear infinite;
     transform-origin: 77px 77px;
@@ -76,30 +69,36 @@ h2::before,h2::after,.story__article{
 
 /* ******************************************** CSS Global **************************************** */
 /* Video */
-/* .banner-video{
-
-} */
 
 /* header */
 .main-navigation{
     padding: 30px;
 }
 
-.burger-menu-icon svg{
+.toggleMenuIcon, .closeIcon{
     height: 30px;
     width: 30px;
+    display: none;
+}
+.toggleMenuIcon.active{
+    display: block;
+}
+
+.closeIcon.active{
+    display: block;
 }
 
 .burger-menu-icon{
     cursor: pointer;
 }
 /* .burger-menu-icon:hover{
-    zoom: 2;
+    zoom: 2; transform scale***
 } */
 
-/* .site-header{
+.main-navigation{
+    position: relative;
     z-index: 9999;
-} */
+}
 
 /* designing the once opened window with an overlay  */
 /* .burger-overlay{
@@ -126,12 +125,13 @@ h2::before,h2::after,.story__article{
     background-color: rgb(255, 245, 233, 1) ; /*! modifier à 1  aprés les testes*/
     padding: 50px;
 
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: space-between;
 }
 .burger-menu-opened.active{
-    display: visible;
+    display: flex;
+    
 }
 .logo-burger-opened{
     text-align: center;
@@ -150,6 +150,8 @@ h2::before,h2::after,.story__article{
 }
 
 .burger-menu-links a {
+    display: none;
+
     text-decoration: none;
 
     font-family: 'Roboto Mono';
@@ -158,6 +160,7 @@ h2::before,h2::after,.story__article{
     font-size: 64px;
     line-height: 84px;
 }
+
 .burger-menu-links a:hover{
     color:black !important;
     text-shadow: 1px 1px 8px rgba(255, 195, 157,0.5), 
@@ -170,6 +173,9 @@ h2::before,h2::after,.story__article{
     0px 0px 6px rgba(255,195,157,0.5), 
     0px 0px 6px rgba(255,195,157,0.5), 
     0px 0px 6px rgba(255,195,157,0.5);
+}
+.burger-menu-links a.active{
+    display: block;
 }
 
 .burger-menu-links li{
