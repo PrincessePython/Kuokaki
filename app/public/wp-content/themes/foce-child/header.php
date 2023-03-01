@@ -75,27 +75,26 @@
                         <li><a href="#">STUDIO KOUKAKI</a></li>
                     </ul>
                 </div>
+                
+                <!-- <img class="purple-cat" src="<?php echo get_template_directory_uri() . '/assets/images/cat.png'; ?>" alt="chat violet"> -->
+                <img class="purple-cat" src="http://koukaki.local/wp-content/uploads/2023/03/cat.png" alt="chat violet">
+                
+                <img class="purple-orchid" src="<?php echo get_template_directory_uri() . '/assets/images/orchid.png'; ?>" alt="orchidé violette">
+                <img class="orange-flower-small" src="<?php echo get_template_directory_uri() . '/assets/images/flower.png'; ?>" alt="petite fleur orange">
+                
+                <!-- <img class="orange-cat" src="<?php echo get_template_directory_uri() . '/assets/images/cat-1.png'; ?>" alt="chat orange"> -->
+                <img class="orange-cat" src="http://koukaki.local/wp-content/uploads/2023/03/cat-1.png" alt="chat orange">
 
+                <img class="white-flower" src="<?php echo get_template_directory_uri() . '/assets/images/Sunflower.png'; ?>" alt="grande fleur blanche">
+                <img class="small-purple-flower" src="<?php echo get_template_directory_uri() . '/assets/images/random_flower.png'; ?>" alt="petite fleur violette">
+                
+                <!-- <img class="black-cat" src="<?php echo get_template_directory_uri() . '/assets/images/black-cat.png'; ?>" alt="chat noir"> -->
+                <img class="black-cat" src="http://koukaki.local/wp-content/uploads/2023/03/cat-2.png" alt="chat noir">
+
+                <img class="orange-flower-grand" src="<?php echo get_template_directory_uri() . '/assets/images/hibiscus_footer.png'; ?>">
             </div>
-
-            <!-- <div class="burger-overlay"></div> -->
         </header>
 
 
-        <!----------------------------------- VO  -------------------------------------------------->
-        <!-- <header id="masthead" class="site-header">
-            <nav id="site-navigation" class="main-navigation">
-                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </button>
-                <ul>
-                    <li><a href="#story">Histoire</a></li>
-                    <li><a href="#characters">Personnages</a></li>
-                    <li class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></li>
-                    <li><a href="#place">Lieu</a></li>
-                    <li><a href="#studio">Studio Koukaki</a></li>
-                </ul>
-            </nav>
-        </header> -->
+
+

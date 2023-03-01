@@ -59,24 +59,40 @@ function openBurgerMenu() {
 }
 openBurgerMenu();
 
-// function followLinksCloseMenu() {
-//   const links = document.querySelectorAll('a');
-//   links.addEventListener('click', () => {
+// *! ne fonctionne pas encore
+
+// function openBurgerMenu() {
+//   const menuButton = document.querySelector('.burger-menu-icon');
+//   // check if it's clicked 
+//   menuButton.addEventListener('click', () => {
+
 //     const burgerMenuIcon = document.querySelector(".toggleMenuIcon");
 //     const closeIcon = document.querySelector(".closeIcon");
 //     const menu = document.querySelector('.burger-menu-opened');
 
-//     if (links.classList.contains('active')) {
+//     if (burgerMenuIcon.classList.contains('active')) {
+//       burgerMenuIcon.classList.remove("active");
+//       closeIcon.classList.add("active");
+//       //ouvrir le .burger menu
+//       menu.classList.add('active');
+
+//     } else if(closeIcon.classList.contains('active')) {
 //       burgerMenuIcon.classList.add("active");
 //       closeIcon.classList.remove("active");
 //       menu.classList.remove('active');
-//       links.classList.add('active');
 //     }
-
 //   })
-
 // }
-// followLinksCloseMenu();
+// openBurgerMenu();
+
+// function linkClicked(){
+//   const link = document.querySelectorAll("a");
+//   link.addEventListener('click', () => {
+//     console.log("hello");
+//   })
+// }
+// linkClicked();
+
 
 // ======================================= Clouds ======================================
 const clouds = document.querySelector('.clouds');
@@ -88,13 +104,13 @@ window.addEventListener('scroll', function () {
   //when the scrolling position arrives on the 1355px, clouds will move
   // inside their container .cloud (size = 300px?) and during the scroll of 
   // 699px height. Total size of move is 300px
-  // transform translateX 300 px - > ? 
-  const currentPosition = document.documentElement.scrollTop
-  const rect = MON - VAR.getBoundingClientRect();
+  const currentPosition = document.documentElement.scrollTop;
+  // const rect = MON - VAR.getBoundingClientRect();
   // console.log(currentPosition);
   if (currentPosition >= 1355 && currentPosition <= 2400) {
-    console.log('CLOUDS MOVING !');
     const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+    console.log('CLOUDS MOVING !');
+    // console.log(viewHeight);
 
     // cloud1 transform translateX + considering the width of the container .clouds 
     // cloud2 transform translateX
@@ -108,7 +124,7 @@ window.addEventListener('scroll', function () {
 // ============================================ Sections ================================
 
 const sections = document.querySelectorAll('section');
-console.log(sections);
+// console.log(sections);
 
 function fadeInSections() {
   sections.forEach((section) => {

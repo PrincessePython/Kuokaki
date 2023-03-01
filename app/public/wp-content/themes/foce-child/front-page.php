@@ -4,26 +4,11 @@ get_header();
 ?>
 
 <main id="primary" class="site-main">
-    <!-- <div class="burger-menu-opened">
-        <div class="logo-burger-opened">
-            <img src="../../uploads/2023/02/LOGO-150x97.png" alt="logo studio d'animation">
-        </div>
-        <ul class="burger-menu-links">
-            <li><a href="#story">Histoire</a></li>
-            <li><a href="#characters">Personnages</a></li>
-            <li><a href="#place">Lieu</a></li>
-            <li><a href="#studio">Studio Koukaki</a></li>
-        </ul>
-    </div> -->
-
-    <!-- <div class="burger-overlay"></div> -->
-
-
-    <section class="banner section">
+    <section class="banner">
         <img id="banner-logo" src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
     </section>
 
-    <section id="#story" class="story section">
+    <section id="story" class="story section">
         <h2 class="fade-in-scroll">L'histoire</h2>
         <article id="" class="story__article">
             <p><?php echo get_theme_mod('story'); ?></p>
@@ -38,7 +23,7 @@ get_header();
             </div>
         </article>
 
-        <article id="place">
+        <article id="place" class="fade-in-scroll">
             <div>
                 <h3 class="fade-in-scroll">Le Lieu</h3>
                 <p><?php echo get_theme_mod('place'); ?></p>

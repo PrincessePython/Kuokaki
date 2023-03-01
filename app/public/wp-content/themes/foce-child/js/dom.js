@@ -8,8 +8,10 @@ let video = document.createElement('video');
 // console.log(video);
 
 // attribute "poster"
-video.poster = 'wp-content/themes/foce-child/assets/images/banner.png';
-video.className = "banner-video";
+    video.poster = 'wp-content/themes/foce-child/assets/images/banner.png';
+    video.className = "banner-video";
+
+
 
 // ajoute de source vidéo
 let source = document.createElement('source');
