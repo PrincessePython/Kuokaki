@@ -31,8 +31,17 @@ des deex élémnts présets dans le banner de l'affichage géneral
     0%{transform: translateY(-10px);transition: ease 0.5s;}
     50%{transform: translateY(10px);transition: ease 0.5s;}
     100%{transform: translateY(-10px);transition: ease 0.5s;}
-  } 
+}
 
+/* Clouds */
+@keyframes move-to-left{
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(300px);
+    }
+  } 
 
 /* ============ Fin animations banner ====================== */
 /* animation hero header opened */

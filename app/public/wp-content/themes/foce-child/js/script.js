@@ -39,7 +39,6 @@ function openBurgerMenu() {
   const menuButton = document.querySelector('.burger-menu-icon');
   // check if it's clicked 
   menuButton.addEventListener('click', () => {
-
     const burgerMenuIcon = document.querySelector(".toggleMenuIcon");
     const closeIcon = document.querySelector(".closeIcon");
     const menu = document.querySelector('.burger-menu-opened');
@@ -54,72 +53,42 @@ function openBurgerMenu() {
       burgerMenuIcon.classList.add("active");
       closeIcon.classList.remove("active");
       menu.classList.remove('active');
+      linkClicked();
     }
   })
 }
 openBurgerMenu();
 
-// *! ne fonctionne pas encore
-
-// function openBurgerMenu() {
-//   const menuButton = document.querySelector('.burger-menu-icon');
-//   // check if it's clicked 
-//   menuButton.addEventListener('click', () => {
-
-//     const burgerMenuIcon = document.querySelector(".toggleMenuIcon");
-//     const closeIcon = document.querySelector(".closeIcon");
-//     const menu = document.querySelector('.burger-menu-opened');
-
-//     if (burgerMenuIcon.classList.contains('active')) {
-//       burgerMenuIcon.classList.remove("active");
-//       closeIcon.classList.add("active");
-//       //ouvrir le .burger menu
-//       menu.classList.add('active');
-
-//     } else if(closeIcon.classList.contains('active')) {
-//       burgerMenuIcon.classList.add("active");
-//       closeIcon.classList.remove("active");
-//       menu.classList.remove('active');
-//     }
-//   })
-// }
-// openBurgerMenu();
-
-// function linkClicked(){
-//   const link = document.querySelectorAll("a");
-//   link.addEventListener('click', () => {
-//     console.log("hello");
-//   })
-// }
-// linkClicked();
-
+function linkClicked(){
+  const links = document.querySelectorAll("a");
+  // console.log(links); // node list des liens
+  const burgerMenuIcon = document.querySelector(".toggleMenuIcon");
+  const closeIcon = document.querySelector(".closeIcon");
+  const menu = document.querySelector('.burger-menu-opened');
+  
+  for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', () => {
+      burgerMenuIcon.classList.add("active");
+      closeIcon.classList.remove("active");
+      menu.classList.remove('active');
+    });
+  }
+}
+linkClicked();
 
 // ======================================= Clouds ======================================
-const clouds = document.querySelector('.clouds');
-const cloud1 = document.querySelector('.cloud-1');
-const cloud2 = document.querySelector('.cloud-2');
 
+const clouds = document.querySelector(".clouds");
 
-window.addEventListener('scroll', function () {
-  //when the scrolling position arrives on the 1355px, clouds will move
-  // inside their container .cloud (size = 300px?) and during the scroll of 
-  // 699px height. Total size of move is 300px
-  const currentPosition = document.documentElement.scrollTop;
-  // const rect = MON - VAR.getBoundingClientRect();
-  // console.log(currentPosition);
-  if (currentPosition >= 1355 && currentPosition <= 2400) {
-    const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
-    console.log('CLOUDS MOVING !');
-    // console.log(viewHeight);
-
-    // cloud1 transform translateX + considering the width of the container .clouds 
-    // cloud2 transform translateX
-  } else {
-    console.log('i am not in the zone :(')
-    // rien de se passe ici. pas d'animation.
-  };
-
+window.addEventListener('scroll', function() {
+  const rect = clouds.getBoundingClientRect();
+  const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+    if (rect.top <= viewHeight * 0.8 && rect.bottom >= viewHeight*0.8) {
+      const mov = clouds.classList.add('move-to-left');
+      // console.log(mov);
+    }
 });
+
 
 // ============================================ Sections ================================
 

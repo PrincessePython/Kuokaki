@@ -119,8 +119,10 @@ h2::before,h2::after,.story__article{
     display: block;
 }
 
-.burger-menu-icon{
+.burger-menu-icon {
     cursor: pointer;
+    position: absolute;
+    right: 5%;
 }
 /* .burger-menu-icon:hover{
     zoom: 2; transform scale***
@@ -220,7 +222,7 @@ h2::before,h2::after,.story__article{
 #site-navigation{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 /********************** Design cats  flowers  **********************/
@@ -334,10 +336,8 @@ footer{
     padding-left: 40px;
     margin-bottom: 160px;
 }
-.clouds{
-    animation: slideToTheSide 10s linear infinite; /*! just for test, to remove @keyframes from animations once done */
-    filter: blur(12px);         
-    width: 300px;
+.clouds.move-to-left {
+    animation: move-to-left 0.3s ease-in;
 }
 
 /********************* Nomination *********************/
