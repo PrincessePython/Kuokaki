@@ -78,15 +78,22 @@ linkClicked();
 
 // ======================================= Clouds ======================================
 
-const clouds = document.querySelector(".clouds");
+// const clouds = document.querySelector(".clouds");
+
+const cloudsSection = document.getElementById("place");
 
 window.addEventListener('scroll', function() {
-  const rect = clouds.getBoundingClientRect();
-  const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
-    if (rect.top <= viewHeight * 0.8 && rect.bottom >= viewHeight*0.8) {
-      const mov = clouds.classList.add('move-to-left');
-      // console.log(mov);
-    }
+  const positionContainerTop = cloudsSection.offsetTop;
+  
+  const positionContainerBottom = positionContainerTop + cloudsSection.offsetHeight;
+  const positionCurrent = window.pageYOffset;
+
+  const clouds = document.querySelector(".clouds");
+  
+  // console.log(positionContainer, positionCurrent);
+  if (positionCurrent > positionContainerTop && positionCurrent < positionContainerBottom) {
+    clouds.classList.add('move-to-left');
+  }
 });
 
 

@@ -34,14 +34,14 @@ des deex élémnts présets dans le banner de l'affichage géneral
 }
 
 /* Clouds */
-@keyframes move-to-left{
+/* @keyframes move-to-left{
     from {
       transform: translateX(0%);
     }
     to {
       transform: translateX(300px);
     }
-  } 
+}  */
 
 /* ============ Fin animations banner ====================== */
 /* animation hero header opened */
@@ -76,18 +76,6 @@ des deex élémnts présets dans le banner de l'affichage géneral
 /* *************** Fin animation section "histoire" ************** */
 
 /* **************** Animation des fleurs ************************* */
-/* @-webkit-keyframes rotate{
-    100%{-webkit-transform: rotate(360deg);}
-}
-
-@-moz-keyframes rotate{
-    100%{-webkit-transform: rotate(360deg);}
-}
-
-@keyframes rotate {
-    100%{-webkit-transform: rotate(360deg);}
-} */
-
 
 @keyframes flowerSpin {
     100%{
