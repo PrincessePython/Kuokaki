@@ -1,6 +1,6 @@
 /* 
 Les animations d'apparission en fade-in et le mouvement en 2D (vertical) 
-des deex élémnts présets dans le banner de l'affichage géneral 
+des deux élémnts présets dans le banner de l'affichage géneral 
 */
 
 /* logo img */
@@ -34,14 +34,14 @@ des deex élémnts présets dans le banner de l'affichage géneral
 }
 
 /* Clouds */
-/* @keyframes move-to-left{
-    from {
-      transform: translateX(0%);
+@keyframes move-to-left{
+    0% {
+      transform: translateX(0);
     }
-    to {
-      transform: translateX(300px);
+    100% {
+      transform: translateX(-300px);
     }
-}  */
+} 
 
 /* ============ Fin animations banner ====================== */
 /* animation hero header opened */

@@ -330,11 +330,14 @@ footer{
     position: absolute;
     margin-top: -417px;
     padding-left: 292px;
+    filter: blur(10px);
 }
 .cloud-2{
     position: absolute;
     padding-left: 40px;
     margin-bottom: 160px;
+    filter: blur(10px);
+
 }
 .story #place > div{
     width: 1440px;
@@ -342,16 +345,8 @@ footer{
 .clouds.move-to-left {
     transform: translateX(-300px);
     animation: move-to-left 2s ease-in;
-
 }
-@keyframes move-to-left{
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-300px);
-    }
-} 
+
 
 /********************* Nomination *********************/
 .nomination-section{
@@ -391,13 +386,16 @@ footer{
 }
 .site-footer::after{
     margin-bottom: 312px;
+    position: relative;
+    right: -6em;
+    bottom: -0.2em;
 }
 .site-footer::before{
     margin-top: -12px;
 }
 .site-footer ul::after{
-    /* content: ""; */
-    /* margin-top: 10px; */
+
+     margin-top: 10px;
 }
 
 /************************ Fin section nomination  ************************/
@@ -422,7 +420,7 @@ footer{
     width: 100%;
   }
 
-/* ******************** Fin section carousel *********************/
+/* **************** Fin section carousel *******************/
 
 
 
