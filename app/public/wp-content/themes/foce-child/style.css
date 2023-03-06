@@ -25,10 +25,6 @@ section.banner img{
     animation-timing-function: ease;
 }
 
-/* #banner-logo{
-    animation-name: floater;
-    animation-timing-function: ease-in-out;
-} */
 #banner-logo{
     animation: floater 5s cubic-bezier(0.43, 0.08, 0.61, 0.99) infinite;
 }
@@ -99,7 +95,7 @@ h2::before,h2::after,.story__article{
 
 
 
-/*! ============================================== CSS Global =================================================*/
+/* ============================================== CSS Global =================================================*/
 
 /********************* Header *********************/
 .main-navigation{
@@ -124,9 +120,6 @@ h2::before,h2::after,.story__article{
     position: absolute;
     right: 5%;
 }
-/* .burger-menu-icon:hover{
-    zoom: 2; transform scale***
-} */
 
 .main-navigation{
     position: relative;

@@ -4,16 +4,6 @@ function theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 }
 
-// // // // // // // // // // // // // /Ajoute le jQuery  // // // // /// /// // // // // // // // // // // // /
-
-// function theme_scripts() {
-//     wp_enqueue_script('script', get_stylesheet_directory_uri() . '/script.js', array(), _S_VERSION, true); 
-// }
-// add_action('wp_enqueue_scripts', 'theme_scripts');
-
-// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
-
-
 
 // Get customizer options form parent theme
 if ( get_stylesheet() !== get_template() ) {

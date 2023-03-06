@@ -1,4 +1,4 @@
-// ==================================== titles version JS =================================
+// ==================================== Titles  =================================
 
 const titles = document.querySelectorAll('.fade-in-scroll');
 
@@ -14,7 +14,7 @@ function fadeInTitles() {
 window.addEventListener('scroll', fadeInTitles);
 
 
-// ==================================== carrousel Swiper =================================
+// ==================================== Carrousel Swiper =================================
 let swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
@@ -77,8 +77,6 @@ function linkClicked(){
 linkClicked();
 
 // ======================================= Clouds ======================================
-
-// const clouds = document.querySelector(".clouds");
 
 const cloudsSection = document.getElementById("place");
 
